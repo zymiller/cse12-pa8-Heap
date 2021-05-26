@@ -125,12 +125,14 @@ In the starter code, we provided the file HeapTest.java to unit test your implem
 Just like pa3 you will be creating different mazes that you will run your algorithm through to find a path from the start square to the finish square. However, this time there will also be a 2-D cost array that you will include when creating the Maze. We have included one testcase for you to demonstrate how to construct the costArray and create the corresponding Maze. This test should pass when you have finished implementing the solve algorithm. Similar to HeapTest.java, you should include at least one unit test as we will be grading for completion; however, we **strongly** recommend you to look at the test descriptions given and write
 as many tests as you can to ensure you'll pass all of the autograder tests.
 
-## Part 3: Gradescope Assignment (6 points)
+## Part 3: Gradescope Assignment (5 points)
 Answer the questions in *Programming Assignment 8 - questions* on Gradescope. For each coding question, you will need to choose a proper data structure for solving it, such that the time complexity achieved will be optimal. Here is an overview of each question. See more details in the Gradescope assignment.
 
 1. Given a string s containing just the characters `(`, `)`, `{`, `}`, `[` and `]`, determine if the input string is valid. An input string is valid if open brackets are closed by the same type of brackets and are closed in the correct order.
 2. Given an array of integers `nums` and an integer `target`, return indices of the two numbers such that they add up to `target`. You may assume that each input would have exactly one solution, and you may not use the same element twice. You can return the answer in any order.
 3. You're given strings `jewels` representing the types of stones that are jewels, and `stones` representing the stones you have. Each character in `stones` is a type of stone you have. You want to know how many of the stones you have are also jewels. Letters are case sensitive, so "a" is considered a different type of stone from "A".
+4. We have a collection of stones, each stone has a positive integer weight. Each turn, we choose the two heaviest stones and smash them together.  Suppose the stones have weights `x` and `y` with `x <= y`.  After `x` and `y` are smashed together, if `x == y`, both stones are totally destroyed; if `x != y`, the stone of weight `x` is totally destroyed, and the stone of weight `y` has new weight `y-x`. At the end, there is at most 1 stone left.  Return the weight of this stone (or 0 if there are no stones left.)
+5. Given an array of distinct elements, print the closest greater element for every element. The closest greater element for an element `x` is the smallest element on the right side of `x` in array which is greater than `x`. Elements for which no greater element exist, consider next greater element as -1.
 
 
 ## Clarification
@@ -183,11 +185,11 @@ The easiest way to submit your files is to drag them individually into the submi
 #### Part 3
 Please submit your answers to the questions from part 3 on the Gradescope assignment **Programming Assignment 8 - questions**. You may submit as many times as you like till the deadline.
 
-## Scoring (46 points total)
+## Scoring (45 points total)
 
 - 18 points: implementation of `Heap` [automatically graded]
 - 15 points: Implementation of `MazeSolver` [automatically graded]
-- 6 points: Gradescope Questions [automatically graded]
+- 5 points: Gradescope Questions [automatically graded]
 - 5 points: Style [manually graded]
 - 1 point: `HeapTest` graded on completion [manually graded]
 - 1 point: `TestSolvers` graded on completion [manually graded]
