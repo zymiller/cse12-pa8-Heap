@@ -1,16 +1,14 @@
-
 import java.util.List;
-import java.util.Map.Entry;
 
-public interface PriorityQueue<K,V> {
-    void add(K k, V v);
-  
-    Entry<K, V> poll();
+public interface PriorityQueue<K, V> {
+	void add(K k, V v);
 
-    Entry<K, V> peek();
+	Entry<K, V> poll();
 
-    List<Entry<K,V>> toArray();
-    
-    boolean isEmpty();
+	Entry<K, V> peek();
+
+	List<Entry<K, V>> toArray();
+
+	boolean isEmpty();
 
 }
