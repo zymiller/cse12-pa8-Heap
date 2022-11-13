@@ -1,5 +1,6 @@
 
 import java.util.List;
+import java.util.Map.Entry;
 
 public interface PriorityQueue<K,V> {
     void add(K k, V v);
