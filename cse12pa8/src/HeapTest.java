@@ -29,6 +29,8 @@ public class HeapTest {
 		heap.add(10, "10");
 		heap.add(5, "");
 		heap.add(2, "");
+		heap.poll();
+		System.out.println(heap.toString());
 		assertEquals(8, heap.entries.size());
 	}
 
